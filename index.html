@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de XV años</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+<body>
+  <div class="invitation">
+    <div class="balloon"> <img class="ballonImg" src="ballon2.png" alt=""></div>
+    <div class="balloon"><img class="ballonImg" src="ballon2.png" alt=""></div>
+    <div class="balloon"><img class="ballonImg" src="ballon2.png" alt=""></div>
+    <div class="balloon"> <img class="ballonImg" src="ballon2.png" alt=""></div>
+    <div class="balloon"><img class="ballonImg" src="ballon2.png" alt=""></div>
+    <div class="balloon"><img class="ballonImg" src="ballon2.png" alt=""></div>
+   
+    
+    <div class="content">
+        <h1>¡Mis XV años!</h1>
+        <p>Estás invitado/a a celebrar los XV años de CHARLIZE EILEENE con nosotros.</p>
+        <p>El 27 de julio de 2024</p>
+        <p>Lugar: Salon diamante</p>
+        <div id="mapid" style="height: 150px;"></div>
+        <p>¡Esperamos verte ahí!</p>
+        <button class="confirm-button" onclick="showForm()">Confirmar Asistencia</button>
+        <p id="countdown"></p>
+    </div>
+    <div id="form-container" style="display: none;">
+        <form id="attendance-form">
+          <input type="text" name="nombre" placeholder="Nombre" required><br>
+          <input type="email" name="email" placeholder="Correo electrónico" required><br>
+          <input type="number" name="acompanantes" placeholder="Número de acompañantes" required><br>
+          <button class="confirm-button" type="submit">Enviar</button>
+        </form>
+      </div> 
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
